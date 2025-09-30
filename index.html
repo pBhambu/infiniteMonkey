@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Monkey Theorem</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <center><h1>Infinite Monkey Theorem</h1></center>
+        </header>
+        <main>
+            <section>
+                <h2>What is the Infinite Monkey Theorem?</h2>
+                <p>According to Wikipedia, "The infinite monkey theorem states that a monkey hitting keys 
+                    independently and at random on a typewriter keyboard for an infinite amount of time will 
+                    almost surely type any given text, including the complete works of William Shakespeare."</p>
+            </section>
+            <section>
+                <h2>What does this simulator do?</h2>
+                <p>This simulator mimics a monkey typing randomly to see how quickly it can generate known phrases or texts.</p>
+            </section>
+            <section class = "program">
+                
+                <label for="phrase">Type phrase here:</label>
+                <input id="phrase" onchange="getProb()">
+
+                <br><br>
+
+                <label for="proba">Probabability:</label>  
+                <input type="text" id="proba" name="proba" value="" readonly>
+                
+                <br><br>
+                <label for="used">Characters typed:</label>  
+                <input type="used" id="used" name="used" value="" readonly>
+                
+                <br><br>
+                <button id ="start">Start simulation</button>
+
+
+                <script src = "script.js" ></script>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

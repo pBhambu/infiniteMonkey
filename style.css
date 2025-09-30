@@ -1,0 +1,24 @@
+header{
+    font: 25sspx; 
+    border:1px ;
+    margin-top:1px;   
+
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: white;
+}
+
+
+section{
+    font: 15px Courier;
+    margin-top:0px;
+}
+.program{
+    border: 1px solid black;
+    
+}
+input{
+    margin-top:5px
+}
