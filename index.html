@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <center><h1>Infinite Monkey Theorem</h1></center>
+            <h1>Infinite Monkey Theorem</h1>
         </header>
         <main>
             <section>
@@ -21,29 +21,33 @@
             </section>
             <section>
                 <h2>What does this simulator do?</h2>
-                <p>This simulator mimics a monkey typing randomly to see how quickly it can generate known phrases or texts.</p>
+                <p>This simulator mimics a monkey typing randomly to see how quickly it can generate known phrases or texts. 
+                    Watch as random characters are generated until they match your target phrase!</p>
             </section>
-            <section class = "program">
+            <section class="program">
+                <h2>Try It Yourself</h2>
                 
-                <label for="phrase">Type phrase here:</label>
-                <input id="phrase" onchange="getProb()">
+                <div class="input-group">
+                    <label for="phrase">Target Phrase:</label>
+                    <input id="phrase" type="text" placeholder="Enter a phrase (e.g., 'hello')" onchange="getProb()">
+                </div>
 
-                <br><br>
-
-                <label for="proba">Probabability:</label>  
-                <input type="text" id="proba" name="proba" value="" readonly>
+                <div class="input-group">
+                    <label for="proba">Probability of Success:</label>  
+                    <input type="text" id="proba" name="proba" value="" readonly placeholder="Enter a phrase first">
+                </div>
                 
-                <br><br>
-                <label for="used">Characters typed:</label>  
-                <input type="used" id="used" name="used" value="" readonly>
+                <div class="input-group">
+                    <label for="used">Characters Typed:</label>  
+                    <input type="text" id="used" name="used" value="0" readonly>
+                </div>
                 
-                <br><br>
-                <button id ="start">Start simulation</button>
-
-
-                <script src = "script.js" ></script>
+                <button id="start">Start Simulation</button>
+                
+                <div id="output"></div>
             </section>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

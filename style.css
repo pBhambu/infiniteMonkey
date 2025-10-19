@@ -1,24 +1,144 @@
-header{
-    font: 25sspx; 
-    border:1px ;
-    margin-top:1px;   
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto Mono', monospace;
-    background-color: white;
+    background: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    color: #000000;
+    line-height: 1.6;
 }
 
-
-section{
-    font: 15px Courier;
-    margin-top:0px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
-.program{
-    border: 1px solid black;
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 2px solid #000000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+section {
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.program {
+    background: #f5f5f5;
+    border: 2px solid #000000;
+}
+
+.program h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    background: #ffffff;
+}
+
+input:focus {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+}
+
+input[readonly] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+button:active {
+    background: #333333;
+    color: #ffffff;
+}
+
+button:disabled {
+    background: #cccccc;
+    border-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    min-height: 100px;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+    display: none;
+}
+
+#output.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
     
-}
-input{
-    margin-top:5px
+    section {
+        padding: 15px;
+    }
 }
